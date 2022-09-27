@@ -104,7 +104,9 @@ def impatience():
         impatience()
 def goodEndingfrfr():
     print("Best decision ever! You start a conversation with the person just in front of you. You guys immediately connect and decide to buddy up for the ride. You exchanged phone numbers and you got to the top of the ferris wheel right as the firework show started. It was at this point in time that you worked up the courage to ask them on a date. Flash forward a few months and you're the happiest you've ever been and you're meeting their family. Flash forward a couple more years and you're getting married to them, You live a long and happy life with them\n\n\nCongrats and good luck in your next playthrough")
-    begin()
+    answer13 = input("Do you want to play again?\n Y/N\n")
+    if answer13 == "Y":
+        begin()
 def madMouse():
     answer10 = input("ugh the mad mouse line is always so slow, but it's well worth it for those terrifying turns where it feels like the wheels are off the tracks! Now that you have a slight headache and feel a bit queasy what will you do next?\n1. Get Hawaiian Shaved Ice\n2. See a show at the Big Top\n3. Walk around aimlessly\n")
     if answer10 == "1":
@@ -118,7 +120,6 @@ def madMouse():
         madMouse()
 def tiltAWhirl():
     print("GAME OVER\nAs you were enjoying your time on your favorite ride you unexpectadly spin really fast. Long story short your head slamed back and now you have a minor concussion. You return home from the carnival completly exahausted and immedialty go to sleep")
-    begin()
+    answer12 = input("Do you want to play again?\n Y/N")
 def bigTop():
     answer11 = input("")
-begin()
