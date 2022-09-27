@@ -25,7 +25,14 @@ def shavedIce():
          shavedIce()
 def pinaColada():
     print("GAME OVER\nTurns out you have a severe pineapple alergy, you're quickly rushed to a hospital\nLooks like your day at the carnival is over\nBetter luck next time\n\n\n")
-    begin()
+    answer13 = input("Do you want to try again? Y/N\n")
+    if answer13 == "Y":
+        begin()
+    elif answer13 == "N":
+        print("Why are you still here then? little weird if you ask me *-*")
+    else:
+        print("Sorry but that's not an option, try again")
+        pinaColada()
 def strawberry():
     answer3 = input("Yum! What will you do next?\n1. Go on a ride\n2. See a show at the big top\n3. Walk around aimlessly\n")
     if answer3 == "1":
@@ -50,7 +57,7 @@ def cottonCandy():
          cottonCandy()
 def goOnRide():
     print("Cool, tickets were included with your admission to the park")
-    answer5 = input("What ride do you want to go on?\n1. Zero Gravity\n2. Ferris Wheel\n3. Mad Mouse\n4. Tilt-A-Whirl")
+    answer5 = input("What ride do you want to go on?\n1. Zero Gravity\n2. Ferris Wheel\n3. Mad Mouse\n4. Tilt-A-Whirl\n")
     if answer5 == "1":
         zeroGravity()
     elif answer5 == "2":
@@ -76,7 +83,7 @@ def  zeroGravity():
         zeroGravity()
 def ferrisWheel():
     print("its a long wait and you're kind of bored")
-    answer7 = input("Do you want to\n1. play games on you're phone\n2. Go do something else (You dont have time for lines)\n3. Talk to someone else in line")
+    answer7 = input("Do you want to\n1. play games on you're phone\n2. Go do something else (You dont have time for lines)\n3. Talk to someone else in line\n")
     if answer7 == "1":
         gamesDean()
     elif answer7 == "2":
@@ -89,8 +96,15 @@ def ferrisWheel():
 def gamesDean():
     print("You start playing you're new favorite game TETRIS and you're on youre way to a new highscore, you can feel it in the air")
     print("You're so focused on getiing your new high score that you hardly even notice the line moving forward, in no time you're on the ferris wheel and not seeing a thing because this is your best ever TETRIS gameplay")
-    print("YOU GOT YOUR HIGHSCORE!you also missed the firework show, but it's fine. You decide that today has been successful and return home")
-    begin()
+    print("YOU GOT YOUR HIGHSCORE! You also missed the firework show, but it's fine. You decide that today has been successful and return home")
+    answer14 = input("Do you want to play again? Y/N\n")
+    if answer14 == "Y":
+        begin()
+    elif answer14 == "N":
+        print("Um okay then what are you still doing here?")
+    else:
+        print("Sorry but that's not an option, try again.")
+        gamesDean()
 def impatience():
     answer9 = input("Jeez man you cant just wait for a couple minutes? all right then where are you heading?\n1. Get Hawaiian Shaved Ice\n2. See a show at the Big Top\n3. Walk around aimlessly\n")
     if answer9 == "1":
@@ -120,6 +134,14 @@ def madMouse():
         madMouse()
 def tiltAWhirl():
     print("GAME OVER\nAs you were enjoying your time on your favorite ride you unexpectadly spin really fast. Long story short your head slamed back and now you have a minor concussion. You return home from the carnival completly exahausted and immedialty go to sleep")
-    answer12 = input("Do you want to play again?\n Y/N")
+    answer12 = input("Do you want to play again? Y/N\n")
+    if answer12 == "Y":
+        begin()
+    elif answer12 == "N":
+        print("Um okay then what are you still doing here?")
+    else:
+        print("Sorry but that's not an option, try again.")
+        tiltAWhirl()
 def bigTop():
-    answer11 = input("")
+    answer11 = input("You're at the big top! There's a concession stand")
+begin()
