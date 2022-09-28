@@ -143,5 +143,82 @@ def tiltAWhirl():
         print("Sorry but that's not an option, try again.")
         tiltAWhirl()
 def bigTop():
-    answer11 = input("You're at the big top! There's a concession stand")
+    answer11 = input("You're at the big top! There's a concession stand, you got a coupon for a free item with admission, what will you get?\n1. A Hotdog\n2. Auntie Annie's Pretzel bites\n3. Popcorn\n4. Cotton Candy\n")
+    if answer11 == "1":
+        hotDog()
+    elif answer11 == "2":
+        auntieAnnies()
+    elif answer11 == "3":
+        popcorn()
+    elif answer11 == "4":
+        candyFloss()
+    else:
+        print("Sorry but thats not an option, try again")
+        bigTop()
+def hotDog():
+    print("GAME OVER\n Come on man, a hot dog, really? Theres no way you haven't seen those 'how its made' video clips from the hotdog video. The hotdog gave you food poisoning. Not gonna lie it's kinda deserved.")
+    answer15 = input("Do you want to play again?\n Y/N\n")
+    if answer15 == "Y":
+        begin()
+    elif answer15 == "N":
+        print("Kinda weird that you're still here then -_-")
+    else:
+        print("Sorry but thats not an option, try again.")
+        hotDog()
+def auntieAnnies():
+    print("GAME OVER! sorry dude but those were not Auntie Annies pretzels, or maybe they were but they were just taken from the auntie Annies dumpster. The carnival is way too cheap for brand deals. You got incredibly sick almost instantly and drove to the nearest hospital")
+    answer16 = input("Do you wawnt to play  again?\n Y/N")
+    if answer16 == "Y":
+        begin()
+    elif answer16 == "N":
+        print("Okay then leave 0-0")
+    else:
+        print("Sorry but thats not an option, try again.")
+        auntieAnnies()
+def popcorn():
+    print("FINALLY somebody with taste and common sense. Popsorn just makes sense when going to see a circus perform.")
+    answer17 = input("Do you still want to go see the show?\n Y/N\n")
+    if answer17 == "Y":
+        stillGoing()
+    elif answer17 == "N":
+        notSure()
+    else:
+        print("Sorry but thats not an option, try again.")
+        popcorn()
+def stillGoing():
+    answer18 = input("Are you sure about that?\n Y/N\n")
+    if answer18 == "Y":
+        uhOh()
+    elif answer18 == "N":
+        notSure()
+    else:
+        print("Sorry but that's not an option, try again.")
+        stillGoing()
+def notSure():
+    answer19 = input("Phew that was a close one. I wouldnt recomend seeing that show. Call it a gut feeling that it wont go well. Anyways what do you want to do next?\n1. Get hawiian shaved ice\n2. Go on a ride\n3. Walk around aimlessly")
+    if answer19 == "1":
+        shavedIce()
+    elif answer19 == "2":
+        goOnRide()
+    elif answer19 == "3":
+        walkAround()
+    else:
+        print("Sorry but that's not an option, try again.")
+        notSure()
+def uhOh():
+    answer20 = input("You're choicce dude. Anways the show is going pretty smoohtly and it's pretty cool, then the ringmaster asks for a volunteer for a trapeeze trick, will you volunteer?\n Y/N\n")
+    if answer20 == "Y":
+        trapeeze()
+    elif answer20 == "N":
+        elephant()
+    else:
+        print("Sorry but that's not an option, try again.")
+        uhOh()
+def trapeeze():
+    print("GAME OVER.\n turns out you volunteered for a trapeeze trick that went really wrong. You realized a little too late that there was no safety net, maybe you should've listened to your mom about joining gymnastics as a kid :/ but hey the carnival isnt the worst place you could haunt.")
+    answer21 = input("Do you want to play again?\n Y/N\n")
+    if answer21 == "Y":
+        begin()
+    elif answer21 == "N":
+        print("Okay, be that way >:(")
 begin()
