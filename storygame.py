@@ -25,13 +25,13 @@ def shavedIce():
          shavedIce()
 def pinaColada():
     print("GAME OVER\nTurns out you have a severe pineapple alergy, you're quickly rushed to a hospital\nLooks like your day at the carnival is over\nBetter luck next time\n\n\n")
-    answer13 = input("Do you want to try again? Y/N\n")
+    answer13 = input("Do you want to try again?\n Y/N\n")
     if answer13 == "Y":
         begin()
     elif answer13 == "N":
         print("Why are you still here then? little weird if you ask me *-*")
     else:
-        print("Sorry but that's not an option, try again")
+        print("Sorry but that's not an option, try again\n\n\n")
         pinaColada()
 def strawberry():
     answer3 = input("Yum! What will you do next?\n1. Go on a ride\n2. See a show at the big top\n3. Walk around aimlessly\n")
@@ -77,9 +77,9 @@ def  zeroGravity():
     elif answer6 == "2":
         bigTop()
     elif answer6 == "3":
-        walkaround()
+        walkAround()
     else:
-        print("Sorry but that's not an option, try again")
+        print("Sorry but that's not an option, try again\n\n\n")
         zeroGravity()
 def ferrisWheel():
     print("its a long wait and you're kind of bored")
@@ -91,7 +91,7 @@ def ferrisWheel():
     elif answer7 == "3":
         goodEndingfrfr()
     else:
-        print("Sorry but that's not an option, try again")
+        print("Sorry but that's not an option, try again\n\n\n")
         ferrisWheel()
 def gamesDean():
     print("You start playing you're new favorite game TETRIS and you're on youre way to a new highscore, you can feel it in the air")
@@ -103,7 +103,7 @@ def gamesDean():
     elif answer14 == "N":
         print("Um okay then what are you still doing here?")
     else:
-        print("Sorry but that's not an option, try again.")
+        print("Sorry but that's not an option, try again.\n\n\n")
         gamesDean()
 def impatience():
     answer9 = input("Jeez man you cant just wait for a couple minutes? all right then where are you heading?\n1. Get Hawaiian Shaved Ice\n2. See a show at the Big Top\n3. Walk around aimlessly\n")
@@ -112,15 +112,20 @@ def impatience():
     elif answer9 == "2":
         bigTop()
     elif answer9 == "3":
-        walkaround()
+        walkAround()
     else:
-        print("Sorry but that's not an option, try again")
+        print("Sorry but that's not an option, try again\n\n\n")
         impatience()
 def goodEndingfrfr():
     print("Best decision ever! You start a conversation with the person just in front of you. You guys immediately connect and decide to buddy up for the ride. You exchanged phone numbers and you got to the top of the ferris wheel right as the firework show started. It was at this point in time that you worked up the courage to ask them on a date. Flash forward a few months and you're the happiest you've ever been and you're meeting their family. Flash forward a couple more years and you're getting married to them, You live a long and happy life with them\n\n\nCongrats and good luck in your next playthrough")
     answer13 = input("Do you want to play again?\n Y/N\n")
     if answer13 == "Y":
         begin()
+    elif answer13 == "N":
+        print("umm okay then o_o")
+    else:
+        print("Sorry but that's not an option, try again\n\n\n")
+        goodEndingfrfr()
 def madMouse():
     answer10 = input("ugh the mad mouse line is always so slow, but it's well worth it for those terrifying turns where it feels like the wheels are off the tracks! Now that you have a slight headache and feel a bit queasy what will you do next?\n1. Get Hawaiian Shaved Ice\n2. See a show at the Big Top\n3. Walk around aimlessly\n")
     if answer10 == "1":
@@ -128,9 +133,9 @@ def madMouse():
     elif answer10 == "2":
         bigTop()
     elif answer10 == "3":
-        walkaround()
+        walkAround()
     else:
-        print("Sorry but that's not an option, try again")
+        print("Sorry but that's not an option, try again\n\n\n")
         madMouse()
 def tiltAWhirl():
     print("GAME OVER\nAs you were enjoying your time on your favorite ride you unexpectadly spin really fast. Long story short your head slamed back and now you have a minor concussion. You return home from the carnival completly exahausted and immedialty go to sleep")
@@ -140,7 +145,7 @@ def tiltAWhirl():
     elif answer12 == "N":
         print("Um okay then what are you still doing here?")
     else:
-        print("Sorry but that's not an option, try again.")
+        print("Sorry but that's not an option, try again.\n\n\n")
         tiltAWhirl()
 def bigTop():
     answer11 = input("You're at the big top! There's a concession stand, you got a coupon for a free item with admission, what will you get?\n1. A Hotdog\n2. Auntie Annie's Pretzel bites\n3. Popcorn\n4. Cotton Candy\n")
@@ -153,7 +158,7 @@ def bigTop():
     elif answer11 == "4":
         candyFloss()
     else:
-        print("Sorry but thats not an option, try again")
+        print("Sorry but thats not an option, try again\n\n\n")
         bigTop()
 def hotDog():
     print("GAME OVER\n Come on man, a hot dog, really? Theres no way you haven't seen those 'how its made' video clips from the hotdog video. The hotdog gave you food poisoning. Not gonna lie it's kinda deserved.")
@@ -163,7 +168,7 @@ def hotDog():
     elif answer15 == "N":
         print("Kinda weird that you're still here then -_-")
     else:
-        print("Sorry but thats not an option, try again.")
+        print("Sorry but thats not an option, try again.\n\n\n")
         hotDog()
 def auntieAnnies():
     print("GAME OVER! sorry dude but those were not Auntie Annies pretzels, or maybe they were but they were just taken from the auntie Annies dumpster. The carnival is way too cheap for brand deals. You got incredibly sick almost instantly and drove to the nearest hospital")
@@ -173,7 +178,7 @@ def auntieAnnies():
     elif answer16 == "N":
         print("Okay then leave 0-0")
     else:
-        print("Sorry but thats not an option, try again.")
+        print("Sorry but thats not an option, try again.\n\n\n")
         auntieAnnies()
 def popcorn():
     print("FINALLY somebody with taste and common sense. Popsorn just makes sense when going to see a circus perform.")
@@ -183,7 +188,7 @@ def popcorn():
     elif answer17 == "N":
         notSure()
     else:
-        print("Sorry but thats not an option, try again.")
+        print("Sorry but thats not an option, try again.\n\n\n")
         popcorn()
 def stillGoing():
     answer18 = input("Are you sure about that?\n Y/N\n")
@@ -192,7 +197,7 @@ def stillGoing():
     elif answer18 == "N":
         notSure()
     else:
-        print("Sorry but that's not an option, try again.")
+        print("Sorry but that's not an option, try again.\n\n\n")
         stillGoing()
 def notSure():
     answer19 = input("Phew that was a close one. I wouldnt recomend seeing that show. Call it a gut feeling that it wont go well. Anyways what do you want to do next?\n1. Get hawiian shaved ice\n2. Go on a ride\n3. Walk around aimlessly")
@@ -203,7 +208,7 @@ def notSure():
     elif answer19 == "3":
         walkAround()
     else:
-        print("Sorry but that's not an option, try again.")
+        print("Sorry but that's not an option, try again.\n\n\n")
         notSure()
 def uhOh():
     answer20 = input("You're choice dude. Anways the show is going pretty smoohtly and it's pretty cool, then the ringmaster asks for a volunteer for a trapeeze trick, will you volunteer?\n Y/N\n")
@@ -212,7 +217,7 @@ def uhOh():
     elif answer20 == "N":
         elephant()
     else:
-        print("Sorry but that's not an option, try again.")
+        print("Sorry but that's not an option, try again.\n\n\n")
         uhOh()
 def trapeze():
     print("GAME OVER.\n turns out you volunteered for a trapeeze trick that went really wrong. You realized a little too late that there was no safety net, maybe you should've listened to your mom about joining gymnastics as a kid :/ but hey the carnival isnt the worst place you could haunt.")
@@ -222,7 +227,7 @@ def trapeze():
     elif answer21 == "N":
         print("Okay, be that way >:(")
     else:
-        print("Sorry but that's not an option, try again.")
+        print("Sorry but that's not an option, try again.\n\n\n")
         trapeze()
 def elephant():
     print("lame, why didnt you volunteer? Were you worried something was gonna go wrong? Too bad an elephant broke loose from it's restraints and trampled you anyways. R.I.P.\n GAME OVER")
@@ -232,7 +237,7 @@ def elephant():
     elif answer22 == "N":
         print("D: ouch! go play something else then.")
     else:
-        print("Sorry but thats not an option, try again.")
+        print("Sorry but thats not an option, try again.\n\n\n")
         elephant()
 def candyFloss():
     print("GAME OVER. Jeez that came out of nowhere, I'm guessing you want to know what happened and all i can say is the cotton candy fought back. (0_0)")
@@ -242,7 +247,23 @@ def candyFloss():
     elif answer23 == "N":
         print(":-(")
     else:
-        print("Sorry but that's not an option, try again.")
+        print("Sorry but that's not an option, try again.\n\n\n")
         candyFloss()
-
+def walkAround():
+    answer24 = input("You walk for a bit untill you reach a fork in the path, do you want to\n1. Go left\n2. Go right\n")
+    if answer24 == "1":
+        weirdStranger()
+    elif answer24 == "2":
+        redButton()
+    else:
+        print("Sorry but that's not an option =, try again\n\n\n")
+def weirdStranger():
+    answer25 = input("You walk left for a bit until you walk past a strange man sitting on the ground, he asks for some money to get some food. You decide to\n1. Give him some money\n2. Pretend you didnt hear him")
+    if answer25 == "1":
+        giveMoney()
+    elif answer25 == "2":
+        ignoreThePoor()
+    else:
+        print("Sorry but that's not an option, try again\n\n\n")
+        weirdStranger()
 begin()
