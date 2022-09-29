@@ -220,7 +220,7 @@ def uhOh():
         print("Sorry but that's not an option, try again.\n\n\n")
         uhOh()
 def trapeze():
-    print("GAME OVER.\n turns out you volunteered for a trapeeze trick that went really wrong. You realized a little too late that there was no safety net, maybe you should've listened to your mom about joining gymnastics as a kid :/ but hey the carnival isnt the worst place you could haunt.")
+    print("GAME OVER.\n turns out that youshouldn't try trapeze without proper training. You realized a little too late that there was no safety net, maybe you should've listened to your mom about joining gymnastics as a kid :/ but hey the carnival isnt the worst place you could haunt.")
     answer21 = input("Do you want to play again?\n Y/N\n")
     if answer21 == "Y":
         begin()
@@ -266,4 +266,7 @@ def weirdStranger():
     else:
         print("Sorry but that's not an option, try again\n\n\n")
         weirdStranger()
+def giveMoney():
+    print("Wow you're such a good person! You continue on your way after handing the man a small stack of cash.")
+    answer26 = input("What will you do next?")
 begin()
