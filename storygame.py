@@ -206,19 +206,43 @@ def notSure():
         print("Sorry but that's not an option, try again.")
         notSure()
 def uhOh():
-    answer20 = input("You're choicce dude. Anways the show is going pretty smoohtly and it's pretty cool, then the ringmaster asks for a volunteer for a trapeeze trick, will you volunteer?\n Y/N\n")
+    answer20 = input("You're choice dude. Anways the show is going pretty smoohtly and it's pretty cool, then the ringmaster asks for a volunteer for a trapeeze trick, will you volunteer?\n Y/N\n")
     if answer20 == "Y":
-        trapeeze()
+        trapeze()
     elif answer20 == "N":
         elephant()
     else:
         print("Sorry but that's not an option, try again.")
         uhOh()
-def trapeeze():
+def trapeze():
     print("GAME OVER.\n turns out you volunteered for a trapeeze trick that went really wrong. You realized a little too late that there was no safety net, maybe you should've listened to your mom about joining gymnastics as a kid :/ but hey the carnival isnt the worst place you could haunt.")
     answer21 = input("Do you want to play again?\n Y/N\n")
     if answer21 == "Y":
         begin()
     elif answer21 == "N":
         print("Okay, be that way >:(")
+    else:
+        print("Sorry but that's not an option, try again.")
+        trapeze()
+def elephant():
+    print("lame, why didnt you volunteer? Were you worried something was gonna go wrong? Too bad an elephant broke loose from it's restraints and trampled you anyways. R.I.P.\n GAME OVER")
+    answer22 = input("Do you want to play again?\n Y/N\n")
+    if answer22 == "Y":
+        begin()
+    elif answer22 == "N":
+        print("D: ouch! go play something else then.")
+    else:
+        print("Sorry but thats not an option, try again.")
+        elephant()
+def candyFloss():
+    print("GAME OVER. Jeez that came out of nowhere, I'm guessing you want to know what happened and all i can say is the cotton candy fought back. (0_0)")
+    answer23 = input("Do you want to play again?\n Y/N\n")
+    if answer23 == "Y":
+        begin()
+    elif answer23 == "N":
+        print(":-(")
+    else:
+        print("Sorry but that's not an option, try again.")
+        candyFloss()
+
 begin()
