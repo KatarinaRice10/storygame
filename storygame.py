@@ -268,5 +268,45 @@ def weirdStranger():
         weirdStranger()
 def giveMoney():
     print("Wow you're such a good person! You continue on your way after handing the man a small stack of cash.")
-    answer26 = input("What will you do next?")
+    answer26 = input("What will you do next?\n1. Get Hawaiian shaved ice\n2. Go on a ride\n3. See a show at the big top")
+    if answer26 == "1":
+        shavedIce()
+    elif answer26 == "2":
+        goOnRide()
+    elif answer26 == "3":
+        bigTop()
+    else:
+        print("Sorry but thats not an option, try again")
+        giveMoney()
+def ignoreThePoor():
+    print("GAME OVER\nDon't you just feel terrible, ignoring someone in need. No more game for you.")
+    answer27 = input("Do you want to play again?\n Y/N\n")
+    if answer27 == "Y":
+        begin()
+    elif answer27 == "N":
+        print("Okay.")
+def redButton():
+    answer28 = input("You walk to the right and after a bit you see a big red button, do you\n1. Press the button\n2. Leave it alone\n")
+    if answer28 == "1":
+        byeBye()
+    elif answer28 == "2":
+        lame()
+def lame():
+    answer29 = input("A wise decision, what will you do next?\n1. Get Hawaiian shaved ice\n2. Go on a ride\n3. See a show at the big top\n")
+    if answer29 == "1":
+        shavedIce()
+    elif answer29 == "2":
+        goOnRide()
+    elif answer29 == "3":
+        bigTop()
+def  byeBye():
+    print("AHHHHHHH WHY WOULD YOU DO THAT? THE BIG RED BUTTON NEVER GOES WELL, YOU JUST BLEW UP THE WHOLE CARNIVAL jk you did cut the power tho. You quickly make your way back to your car and head home.")
+    answer30 = input("Do you want to play again?\n Y/N\n")
+    if answer30 == "Y":
+        begin()
+    elif answer30 == "N":
+        print("um okay then ;-;")
+    else:
+        print("Sorry but thats not an option, try again")
+        byeBye()
 begin()
